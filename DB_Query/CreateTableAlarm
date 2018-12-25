@@ -1,0 +1,13 @@
+--Create new Table 
+CREATE TABLE IF NOT EXISTS "Alarm"
+	(TableId SERIAL PRIMARY KEY,
+	 Dato TIMESTAMP,
+	 AlarmId SERIAL,
+	 Alarm VARCHAR(30)
+	);
+
+INSERT INTO "Alarm"
+(Dato,Alarm)
+VALUES(CURRENT_TIMESTAMP,'Alarm nr 1');
+
+SELECT * FROM "Alarm";

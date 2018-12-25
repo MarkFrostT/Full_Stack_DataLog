@@ -1,0 +1,22 @@
+--Create new schema 
+CREATE SCHEMA IF NOT EXISTS DB17001;
+
+--Create new Table 
+CREATE TABLE IF NOT EXISTS DB17001.Data
+	(TableId SERIAL PRIMARY KEY,
+	 Dato TIMESTAMP,
+	 DataValue VARCHAR(30),
+	 DataUnits VARCHAR(30),
+	 DataScale VARCHAR(30)
+	);
+
+
+INSERT INTO DB17001.Data
+(Dato,DataValue,DataUnits,DataScale)
+VALUES
+(CURRENT_TIMESTAMP,'236','Temperatur','xx.x'),
+(CURRENT_TIMESTAMP,'238','Temperatur','xx.x'),
+(CURRENT_TIMESTAMP,'240','Temperatur','xx.x'),
+(CURRENT_TIMESTAMP,'238','Temperatur','xx.x');
+
+SELECT * FROM DB17001.Data;

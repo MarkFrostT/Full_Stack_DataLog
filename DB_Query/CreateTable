@@ -1,0 +1,16 @@
+--Create new Table 
+CREATE TABLE IF NOT EXISTS "117011"
+	(TableId SERIAL PRIMARY KEY,
+	 Dato TIMESTAMP,
+	 Data0 VARCHAR(30),
+	 Data1 VARCHAR(30),
+	 Data2 VARCHAR(30),
+	 Data3 VARCHAR(30),
+	 Data4 VARCHAR(30)
+	);
+
+INSERT INTO "117011"
+(Dato,Data0,Data1,Data2,Data3,Data4)
+VALUES(CURRENT_TIMESTAMP,'1','2','3','4','5');
+
+SELECT * FROM "117011";
